@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+.header {
+  .header-button {
+    display: flex;
+  }
+
+  .logo-icon {
+    color: $colorPink;
+    width: 2rem;
+
+    @media #{$screenLarge} {
+      width: 4.5rem;
+    }
+  }
+}
