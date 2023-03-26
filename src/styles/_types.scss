@@ -1,0 +1,56 @@
+[class*="heading-"] {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.heading-small {
+  font-size: 1.8rem;
+
+  @media #{$screenLarge} {
+    font-size: 3.6rem;
+  }
+}
+
+.heading-regular {
+  font-size: 2rem;
+
+  @media #{$screenLarge} {
+    font-size: 3.8rem;
+  }
+}
+
+.heading-large {
+  font-size: 5rem;
+
+  @media #{$screenLarge} {
+    font-size: 7.4rem;
+  }
+}
+
+[class*="body-"] {
+  font-family: "Open Sans", sans-serif;
+}
+
+.body-small {
+  font-size: 1.2rem;
+
+  @media #{$screenLarge} {
+    font-size: 1.4rem;
+  }
+}
+
+.body-regular {
+  font-size: 1.4rem;
+
+  @media #{$screenLarge} {
+    font-size: 1.6rem;
+  }
+}
+
+.body-large {
+  font-size: 1.6rem;
+
+  @media #{$screenLarge} {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,29 @@
+// Colors
+
+// Basic
+$colorWhite: #fff;
+$colorBlack: #000;
+
+// Primary
+$colorPink: hsl(322, 100%, 66%);
+$colorLightPink: hsl(321, 100%, 78%);
+$colorLightRed: hsl(0, 100%, 63%);
+
+// Neutral
+$colorVeryDarkCyan: hsl(192, 100%, 9%);
+$colorVeryPaleBlue: hsl(207, 100%, 98%);
+
+// Site side paddings
+$mobileSidePadding: 2rem;
+$desktopSidePadding: 4rem;
+
+// Site max widths
+$maxMobileWidth: 76.8rem;
+$maxDesktopWidth: 144rem;
+
+// Media queries
+$screenMedium: "(min-width: 768px)";
+$screenLarge: "(min-width: 1024px)";
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Poppins', sans-serif;
