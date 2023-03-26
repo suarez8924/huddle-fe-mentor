@@ -1,8 +1,12 @@
-import React from 'react';
+import { Header } from '../Header/Header';
 import './App.scss';
 
-function App() {
-  return <main className="App"></main>;
-}
+const App = () => {
+  return (
+    <main className="App">
+      <Header />
+    </main>
+  );
+};
 
 export default App;
