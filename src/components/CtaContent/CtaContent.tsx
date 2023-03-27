@@ -1,4 +1,5 @@
 import { PrimaryButton } from '../PrimaryButton/PrimaryButton';
+import './CtaContent.scss';
 
 interface CtaContentProps {
   heading: string;
@@ -22,11 +23,11 @@ export const CtaContent = ({
 }: CtaContentProps) => {
   return (
     <section
-      className={`${
+      className={`cta-content ${
         hasDecorativeWave ? 'has-decorative-wave' : ''
       } ${className}`}
     >
-      <h2>{heading}</h2>
+      <h2 className="heading">{heading}</h2>
       {body && <p>{body}</p>}
       <PrimaryButton onClick={button.onClick}>{button.label}</PrimaryButton>
       {image && (
