@@ -11,10 +11,16 @@ const App = () => {
       <main className="app">
         <CtaContent
           className="main-section"
-          heading="Build The Community Your Fans Will Love"
+          heading="Build the community your fans will love"
           body="Huddle re-imagines the way we build communities. You are a voice, but so does your audience. Create connections with your users as you engage in genuine discussion."
-          button={{ label: 'Get Started For Free', onClick: () => {} }}
+          button={{ label: 'Get started for free', onClick: () => {} }}
           image={ScreenMockups}
+        />
+        <CtaContent
+          className="end-section"
+          heading="Ready to build your community?"
+          button={{ label: 'Get started for free', onClick: () => {} }}
+          hasDecorativeWave
         />
       </main>
     </Fragment>
