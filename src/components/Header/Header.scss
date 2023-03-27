@@ -1,16 +1,26 @@
-@import "../../styles/variables";
+@import '../../styles/variables';
 
 .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+
   .header-button {
     display: flex;
   }
 
   .logo-icon {
-    color: $colorPink;
-    width: 2rem;
+    width: 10rem;
 
     @media #{$screenLarge} {
-      width: 4.5rem;
+      width: 24.5rem;
     }
+  }
+
+  .hidden-heading {
+    display: none;
   }
 }
