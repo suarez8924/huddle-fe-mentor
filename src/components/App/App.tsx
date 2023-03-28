@@ -7,6 +7,7 @@ import { ContentWithImage } from '../ContentWithImage/ContentWithImage';
 import illustrationGrowTogether from '../../assets/images/svg/illustration-grow-together.svg';
 import illustrationFlowingConversation from '../../assets/images/svg/illustration-flowing-conversation.svg';
 import illustrationYourUsers from '../../assets/images/svg/illustration-your-users.svg';
+import { NumbersContainer } from '../NumbersContainer/NumbersContainer';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           button={{ label: 'Get started for free', onClick: () => {} }}
           image={screenMockups}
         />
+        <NumbersContainer />
         <ContentWithImage
           heading="Flowing conversations"
           body="You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow."
