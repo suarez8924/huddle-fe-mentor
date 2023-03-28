@@ -1,0 +1,11 @@
+.content-with-image {
+  display: flex;
+
+  &.is-reversed {
+    flex-direction: row-reverse;
+  }
+
+  .image-wrapper {
+    width: 55rem;
+  }
+}
