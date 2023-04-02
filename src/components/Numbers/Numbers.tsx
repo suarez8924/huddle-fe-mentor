@@ -1,7 +1,12 @@
+import { FunctionComponent, SVGProps } from 'react';
 import './Numbers.scss';
 
 interface numbersProps {
-  icon: string;
+  icon: FunctionComponent<
+    SVGProps<SVGSVGElement> & {
+      title?: string | undefined;
+    }
+  >;
   numbers: string;
   label: string;
   className?: string;
@@ -12,9 +17,10 @@ export const Numbers = ({
   label,
   className = '',
 }: numbersProps) => {
+  const Icon = icon;
   return (
     <div className={`numbers ${className}`}>
-      <img src={icon} alt="" />
+      <Icon />
       <h2 className="heading-large">{numbers}</h2>
       <p className="body body-large">{label}</p>
     </div>

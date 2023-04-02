@@ -1,3 +1,11 @@
+@import '../../styles/variables';
+
 .numbers-container {
   display: flex;
+
+  .icon-pink {
+    svg {
+      color: $colorPink;
+    }
+  }
 }
