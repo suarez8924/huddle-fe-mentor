@@ -8,6 +8,7 @@ import illustrationGrowTogether from '../../assets/images/svg/illustration-grow-
 import illustrationFlowingConversation from '../../assets/images/svg/illustration-flowing-conversation.svg';
 import illustrationYourUsers from '../../assets/images/svg/illustration-your-users.svg';
 import { NumbersContainer } from '../NumbersContainer/NumbersContainer';
+import { Footer } from '../Footer/Footer';
 
 const App = () => {
   return (
@@ -45,6 +46,7 @@ const App = () => {
           hasDecorativeWave
         />
       </main>
+      <Footer />
     </Fragment>
   );
 };

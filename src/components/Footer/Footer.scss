@@ -1,0 +1,41 @@
+@import '../../styles/variables';
+
+.footer {
+  background-color: $colorVeryDarkCyan;
+  color: $colorWhite;
+
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-icon {
+    width: 5rem;
+  }
+
+  .icon {
+    width: 2rem;
+    margin-right: 2em;
+  }
+  .telephone {
+    span {
+      margin-right: 1rem;
+    }
+  }
+  .telephone,
+  .email {
+    display: flex;
+  }
+
+  .phone-number {
+    display: inline-block;
+  }
+
+  .newsletter-subscribe {
+    color: $colorWhite;
+
+    input {
+      color: currentColor;
+    }
+  }
+}
