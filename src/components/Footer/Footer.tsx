@@ -3,6 +3,7 @@ import { ReactComponent as IconPhone } from '../../assets/images/svg/icon-phone.
 import { ReactComponent as IconEmail } from '../../assets/images/svg/icon-email.svg';
 import './Footer.scss';
 import { SocialMediaIcon } from '../SocialMediaIcon/SocialMediaIcon';
+import { PrimaryButton } from '../PrimaryButton/PrimaryButton';
 
 export const Footer = () => {
   const IconMessages = iconMessages;
@@ -21,7 +22,12 @@ export const Footer = () => {
           <IconPhone className="icon" />
           <p className="body-regular">
             <span>Phone:</span>
-            <a className="phone-number" href="tel:+15431234567" target="_blank">
+            <a
+              className="phone-number"
+              href="tel:+15431234567"
+              target="_blank"
+              rel="noreferrer"
+            >
               +1-543-123-4567
             </a>
           </p>
@@ -32,6 +38,7 @@ export const Footer = () => {
             className="body-regular"
             href="mailto:example@huddle.com"
             target="_blank"
+            rel="noreferrer"
           >
             example@huddle.com
           </a>
@@ -62,7 +69,12 @@ export const Footer = () => {
         </p>
         <form className="newsletter-subscribe">
           <input type="email" name="email" id="email" />
-          <input type="submit" value="Submit" />
+          <PrimaryButton
+            size="SMALL"
+            variant="SUBMIT"
+            is="input"
+            label="Subscribe"
+          />
         </form>
       </div>
     </footer>

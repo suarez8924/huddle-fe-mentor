@@ -1,22 +1,54 @@
 import React, { PropsWithChildren } from 'react';
 import './PrimaryButton.scss';
 
-type PRIMARY_BUTTON_VARIANT = 'LARGE' | 'REGULAR' | 'SMALL';
+type ButtonSize = 'REGULAR' | 'SMALL';
 
+type ButtonVariant = 'FILLED' | 'TRANSPARENT' | 'SUBMIT';
+
+enum buttonSizes {
+  REGULAR = 'regular',
+  SMALL = 'small',
+}
+
+enum buttonVariant {
+  FILLED = 'filled',
+  TRANSPARENT = 'transparent',
+  SUBMIT = 'submit',
+}
 interface PrimaryButtonProps {
-  variant?: PRIMARY_BUTTON_VARIANT;
-  isFilled?: boolean;
-  onClick: () => void;
+  size?: ButtonSize;
+  variant?: ButtonVariant;
+  onClick?: () => void;
+  is?: 'button' | 'input';
+  label: string;
 }
 export const PrimaryButton = ({
-  variant = 'REGULAR',
-  isFilled = true,
+  size = 'REGULAR',
+  variant = 'FILLED',
   children,
   onClick,
+  is = 'button',
+  label,
 }: PrimaryButtonProps & PropsWithChildren) => {
-  return (
-    <button className="primary-button" onClick={onClick}>
-      {children}
-    </button>
-  );
+  if (is === 'button') {
+    return (
+      <button
+        className={`primary-button size-${buttonSizes[size]} variant-${buttonVariant[variant]}`}
+        onClick={onClick}
+      >
+        {label}
+      </button>
+    );
+  }
+  if (is === 'input') {
+    return (
+      <input
+        className={`primary-button size-${buttonSizes[size]} variant-${buttonVariant[variant]}`}
+        onClick={onClick}
+        type="submit"
+        value={label}
+      />
+    );
+  }
+  return null;
 };

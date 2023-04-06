@@ -9,7 +9,12 @@ export const Header = () => {
         <Logo className="logo-icon" />
         <h1 className="hidden-heading">Huddle</h1>
       </button>
-      <PrimaryButton onClick={() => {}}>Try It Free</PrimaryButton>
+      <PrimaryButton
+        size="SMALL"
+        variant="TRANSPARENT"
+        onClick={() => {}}
+        label="Try It Free"
+      />
     </header>
   );
 };

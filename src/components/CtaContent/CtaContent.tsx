@@ -29,7 +29,7 @@ export const CtaContent = ({
     >
       <h2 className="heading">{heading}</h2>
       {body && <p>{body}</p>}
-      <PrimaryButton onClick={button.onClick}>{button.label}</PrimaryButton>
+      <PrimaryButton onClick={button.onClick} label={button.label} />
       {image && (
         <picture>
           <img src={image} alt="" />

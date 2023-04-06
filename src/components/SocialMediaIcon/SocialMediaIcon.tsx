@@ -30,6 +30,7 @@ export const SocialMediaIcon = ({
       className={`social-media-icon ${className}`}
       href={href}
       target="_blank"
+      rel="noreferrer"
       aria-label={ariaLabel}
     >
       <Icon />
