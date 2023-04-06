@@ -4,12 +4,8 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: 50%;
   padding: 3rem $sidePadding1;
   background-color: $colorWhite;
-  transform: translateX(-50%);
 
   .header-button {
     display: flex;
@@ -17,13 +13,17 @@
 
   .logo-icon {
     width: 10rem;
-
-    @media #{$screenLarge} {
-      width: 24.5rem;
-    }
   }
 
   .hidden-heading {
     display: none;
+  }
+
+  @media #{$screenLarge} {
+    padding: 7.5rem $sidePadding2;
+
+    .logo-icon {
+      width: 24.5rem;
+    }
   }
 }
