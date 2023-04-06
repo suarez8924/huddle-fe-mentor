@@ -16,6 +16,7 @@ enum buttonVariant {
   SUBMIT = 'submit',
 }
 interface PrimaryButtonProps {
+  className?: string;
   size?: ButtonSize;
   variant?: ButtonVariant;
   onClick?: () => void;
@@ -23,9 +24,9 @@ interface PrimaryButtonProps {
   label: string;
 }
 export const PrimaryButton = ({
+  className = '',
   size = 'REGULAR',
   variant = 'FILLED',
-  children,
   onClick,
   is = 'button',
   label,
@@ -33,7 +34,7 @@ export const PrimaryButton = ({
   if (is === 'button') {
     return (
       <button
-        className={`primary-button size-${buttonSizes[size]} variant-${buttonVariant[variant]}`}
+        className={`primary-button size-${buttonSizes[size]} variant-${buttonVariant[variant]} ${className}`}
         onClick={onClick}
       >
         {label}
@@ -43,7 +44,7 @@ export const PrimaryButton = ({
   if (is === 'input') {
     return (
       <input
-        className={`primary-button size-${buttonSizes[size]} variant-${buttonVariant[variant]}`}
+        className={`primary-button size-${buttonSizes[size]} variant-${buttonVariant[variant]} ${className}`}
         onClick={onClick}
         type="submit"
         value={label}

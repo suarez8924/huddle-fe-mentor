@@ -1,5 +1,43 @@
+@import '../../styles/_variables.scss';
+
 .cta-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem $sidePadding1;
+  text-align: center;
+
   .heading {
     text-transform: capitalize;
+  }
+
+  .body {
+    margin-top: 2rem;
+    max-width: 30rem;
+  }
+
+  .cta {
+    margin-top: 5rem;
+  }
+
+  .image {
+    display: block;
+    margin-top: 10rem;
+    width: 100%;
+    max-width: 55rem;
+  }
+
+  @media #{$screenLarge} {
+    padding: 7.5rem $sidePadding2;
+
+    .body {
+      margin-top: 4rem;
+      max-width: 60rem;
+    }
+
+    .image {
+      margin-top: 12rem;
+      max-width: 102rem;
+    }
   }
 }

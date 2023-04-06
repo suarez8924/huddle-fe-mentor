@@ -1,5 +1,5 @@
-[class*="heading-"] {
-  font-family: "Poppins", sans-serif;
+[class*='heading-'] {
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
 
@@ -12,10 +12,10 @@
 }
 
 .heading-regular {
-  font-size: 2rem;
+  font-size: 2.5rem;
 
   @media #{$screenLarge} {
-    font-size: 3.8rem;
+    font-size: 5rem;
   }
 }
 
@@ -27,8 +27,8 @@
   }
 }
 
-[class*="body-"] {
-  font-family: "Open Sans", sans-serif;
+[class*='body-'] {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .body-small {
@@ -43,7 +43,7 @@
   font-size: 1.4rem;
 
   @media #{$screenLarge} {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 }
 
