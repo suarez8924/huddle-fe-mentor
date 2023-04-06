@@ -27,14 +27,14 @@ export const CtaContent = ({
         hasDecorativeWave ? 'has-decorative-wave' : ''
       } ${className}`}
     >
-      <h2 className="heading">{heading}</h2>
-      {body && <p>{body}</p>}
-      <PrimaryButton onClick={button.onClick} label={button.label} />
-      {image && (
-        <picture>
-          <img src={image} alt="" />
-        </picture>
-      )}
+      <h2 className="heading heading-regular">{heading}</h2>
+      {body && <p className="body body-regular">{body}</p>}
+      <PrimaryButton
+        className="cta"
+        onClick={button.onClick}
+        label={button.label}
+      />
+      {image && <img className="image" src={image} alt="" />}
     </section>
   );
 };
